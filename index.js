@@ -80,7 +80,7 @@ if(message.content.startsWith('-bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-let copy = "Emerald Bot";
+let copy = "WestCost";
 let request = `Requested By ${message.author.username}`;
 if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
 msg.react('✅')
@@ -215,7 +215,7 @@ client.on('message', message => {
     if (message.content === "-help") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`♪ZeyadChannel♪.🔝#5717`, 'https://images-ext-2.discordapp.net/external/X9SanEG0s7Dtv3krTgy-kod_fj6JRVJ2AG4JryCiiz0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/375761288518828042/fffa31c797e88cf059dd6db424ff456a.png?width=80&height=80')
+  .setFooter(`!WC 1K⚔M7MEDYT#1640`, 'https://images-ext-2.discordapp.net/external/X9SanEG0s7Dtv3krTgy-kod_fj6JRVJ2AG4JryCiiz0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/375761288518828042/fffa31c797e88cf059dd6db424ff456a.png?width=80&height=80')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:Check Your DM :white_check_mark:")
   
@@ -438,7 +438,7 @@ client.on("message", message => {
       if (message.content === "-help") {
        const embed = new Discord.RichEmbed() 
            .setColor("#FF00FF")
-           .setFooter('By ♪ZeyadChannel♪.🔝#5717 ')
+           .setFooter('By !WC 1K⚔M7MEDYT#1640 ')
            .setDescription(`**__أتمنى يعجبكم البوت يا أغلى ناس ❤️ 💛 💚 💙 💜 🖤__**`)
      message.author.sendEmbed(embed)
      
@@ -635,7 +635,7 @@ client.on('message', message => {
                m.delete()
            }, 32000)
              setTimeout(function() {
-               message.channel.send('تم تهكيرك')
+               message.channel.send('تم تهكيرك بنجاح')
            }, 33000)
            });
          }
@@ -816,8 +816,8 @@ client.on("message", message => {
       if (message.content === "-support") {
        const embed = new Discord.RichEmbed()
            .setColor("RANDOM")
-           .setFooter('©Emerald Bot')  
-           .addField('❤سيرفر الدعم الفني', `  https://discord.gg/m6TYNNt  `)
+           .setFooter('©WestCostBot')  
+           .addField('❤سيرفر الدعم الفني', `  https://discord.gg/CVtFkps  `)
        message.author.send({embed});
      
       }
@@ -7851,7 +7851,7 @@ client.on('message', message => {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO Emerald Bot`` ')
+            .setTitle('``INFO WestCost`` ')
             .addField('``Uptime``', [timeCon(process.uptime())], true)
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
@@ -7862,7 +7862,7 @@ client.on('message', message => {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
                   .addField('``My Prefix``' , `[-]` , true)
                   .addField('``My Language``' , `[ Java Script ]` , true)
-                  .setFooter('By | ♪ZeyadChannel♪.🔝#5717')
+                  .setFooter('By | !WC 1K⚔M7MEDYT#1640')
     })
 }
 });
@@ -8146,7 +8146,7 @@ client.on('message', message => {
 var embed = new Discord.RichEmbed()
 .setColor('RANDOM')
  .setThumbnail(message.author.avatarURL) 
-.addField('Emerald Bot' ,
+.addField('WestCost' ,
 `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
 message.channel.sendEmbed(embed);
 console.log('[38ab] Send By: ' + message.author.username)
@@ -8428,7 +8428,7 @@ client.on('message', message => {
         .addField("📜 اسم السيرفر",`${args}`,true)
         .addField("🌐 بورت السيرفر",`${port}`)
         .setImage(`http://status.mclive.eu/${args}/${args}/25565/banner.png`)
-        .setFooter(`Emerald Bot.`)
+        .setFooter(`WestCost.`)
                 .setTimestamp()
     message.channel.send(embed)      
 }})
@@ -8734,7 +8734,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
  client.on('message', async message => {
   if(message.content.startsWith(prefix + "allbc")) {
     let i = client.users.size;
-    if(message.author.id !== '476185102922285066') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
+    if(message.author.id !== '306464381775118336') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
     var args = message.content.split(' ').slice(1).join(' ');
     if(!args) return message.channel.send('❎ » يجب عليك كتابة الرسالة')
     setTimeout(() => {

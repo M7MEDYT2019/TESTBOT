@@ -18,7 +18,7 @@ const adminprefix = "admin-"
 client.on('ready', function(){
     client.user.setStatus("online");
     var ms = 100000 ;
-    var setGame = [`-help On ${client.guilds.size} Servers`,`-inv Users ${client.users.size}`,`Emerald Bot ❤ ✯`];
+    var setGame = [`-help On ${client.guilds.size} Servers`,`-inv Users ${client.users.size}`,`WestCostBy M7MEDYT ❤ ✯`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -123,8 +123,8 @@ client.on("message", message => {
  if (message.content === "-inv") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setFooter('©Emerald Bot')
-      .addField('Emerald Bot', `https://discordapp.com/oauth2/authorize?client_id=469477937104551956&scope=bot&permissions=8`)
+      .setFooter('©WestCost')
+      .addField('WestCost', `https://discordapp.com/api/oauth2/authorize?client_id=486971602924339208&permissions=0&scope=bot`)
   message.author.send({embed});
 
  }

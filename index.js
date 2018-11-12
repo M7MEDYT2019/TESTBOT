@@ -9139,7 +9139,6 @@ client.on("message", (message) => {
 });
 
 var prefix = "!";
-var adminprefix = '!'
 client.on('message', message => {
    if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'bc')) {

@@ -9137,7 +9137,7 @@ client.on("message", (message) => {
 });
 
 
-const moment = require('moment');//npm install moment
+const moment = require('moment');
 client.on('message', message => {
              var prefix = "$"
 if (message.content.startsWith(prefix + "time")) {
